@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: black; -fx-background-color: green;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testproject.signupController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="290.0" style="-fx-background-color: #25119e; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#3879b50d" layoutX="139.0" layoutY="228.0" radius="120.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle layoutX="62.0" layoutY="136.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="93.0" layoutY="182.0" text="BABLA" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="143.0" layoutY="240.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="143.0" layoutY="248.0" startX="-100.0" stroke="WHITE" />
+            <Label layoutX="83.0" layoutY="31.0" style="-fx-background-color: #c4c1d0;" text="SIGNUP" textFill="#25109e">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="313.0" style="-fx-background-color: #f00fFF; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="25.0" layoutY="150.0" style="-fx-background-color: #c4c1d0;" text="Username:" textFill="#25109e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="188.0" style="-fx-background-color: #c4c1d0;" text="Password :" textFill="#25109e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="51.0" text="Welcome to the signup page" textFill="#25109e">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signupUsernameId" layoutX="118.0" layoutY="150.0" promptText="enter username" style="-fx-background-color: #ffffff;" />
+            <PasswordField fx:id="signupPasswordId" layoutX="118.0" layoutY="188.0" promptText="enter password" style="-fx-background-color: #ffffff;" />
+            <Button fx:id="signupPageButtonId" layoutX="25.0" layoutY="250.0" mnemonicParsing="false" onAction="#signupAction" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: #25109e;" text="Signup" textFill="#ffffffc2">
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Label fx:id="signupPagelevelId" layoutX="63.0" layoutY="101.0">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
